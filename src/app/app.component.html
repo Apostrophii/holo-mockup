@@ -1,6 +1,66 @@
 <div id="homescreen-container">
   <div #homescreen id="homescreen">
-    <div id="child">
+    <div id="background">
+      <div id="content">
+        <div id="search-input">
+          <md-icon id="search-icon">search</md-icon>
+          <input autofocus placeholder="join #standup">
+        </div>
+        <div id="main-area">
+          <div class="list">
+            <div class="title">currently in</div>
+            <app-list-item icon="#" name="holo" selected="true"></app-list-item>
+          </div>
+          <div class="list">
+            <div class="title">favorites</div>
+            <app-list-item icon="#" name="adventist-giving" favorited="true"></app-list-item>
+            <app-list-item icon="#" name="hallway" favorited="true"></app-list-item>
+            <app-list-item icon="#" name="standup" favorited="true"></app-list-item>
+            <app-list-item icon="@" name="blogan" favorited="true">></app-list-item>
+            <app-list-item icon="@" name="cyang" favorited="true">></app-list-item>
+            <app-list-item icon="@" name="filipemoreira" favorited="true">></app-list-item>
+            <app-list-item icon="@" name="nick.clark" favorited="true">></app-list-item>
+          </div>
+          <div class="list">
+            <div class="title">rooms</div>
+            <app-list-item icon="#" name="awr-stats"></app-list-item>
+            <app-list-item icon="#" name="client-meeting-room-1" locked="true"></app-list-item>
+            <app-list-item icon="#" name="client-meeting-room-2" locked="true"></app-list-item>
+            <app-list-item icon="#" name="dev-ops"></app-list-item>
+            <app-list-item icon="#" name="holo" selected="true"></app-list-item>
+            <app-list-item icon="#" name="vop"></app-list-item>
+          </div>
+          <div class="list">
+            <div class="title">people</div>
+            <app-list-item icon="@" name="bookkee0511"></app-list-item>
+            <app-list-item icon="@" name="brianna"></app-list-item>
+            <app-list-item icon="@" name="caleb"></app-list-item>
+            <app-list-item icon="@" name="dallas"></app-list-item>
+            <app-list-item icon="@" name="danny"></app-list-item>
+            <app-list-item icon="@" name="david.burry"></app-list-item>
+            <app-list-item icon="@" name="jacob.adamson"></app-list-item>
+            <app-list-item icon="@" name="james.pellow"></app-list-item>
+            <app-list-item icon="@" name="jash"></app-list-item>
+            <app-list-item icon="@" name="kevin"></app-list-item>
+            <app-list-item icon="@" name="nolan_cafferky"></app-list-item>
+            <app-list-item icon="@" name="tyler.rick"></app-list-item>
+            <app-list-item icon="@" name="will.gretz"></app-list-item>
+          </div>
+        </div>
+        <!--<div id="team-name-bar">
+          K3 Integrations
+        </div>-->
+        <div id="team-pannel">
+          <div class="team-circle">n</div>
+          <div class="team-circle selected">k</div>
+          <div class="team-circle">j</div>
+          <div class="team-circle">c</div>
+          <div class="add-team-circle">+</div>
+          <div id="team-pannel-spacer"></div>
+          <!--<div id="create-button">+</div>-->
+          <div id="settings-button">?</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

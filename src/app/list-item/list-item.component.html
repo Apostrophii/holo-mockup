@@ -1,0 +1,9 @@
+<div class="flex-container" [class.selected]="selected">
+  <div class="icon">{{ icon }}</div>
+  <div class="name">{{ name }}</div>
+  <md-icon *ngIf="!locked && selected" class="lock">lock_outline</md-icon>
+  <md-icon *ngIf="locked" class="lock filled">lock</md-icon>
+  <div class="list-item-spacer"></div>
+  <md-icon *ngIf="!favorited" class="heart">favorite_border</md-icon>
+  <md-icon *ngIf="favorited" class="heart filled">favorite</md-icon>
+</div>

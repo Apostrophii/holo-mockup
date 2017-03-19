@@ -1,0 +1,64 @@
+.flex-container {
+  display: flex;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+
+  &.selected {
+    cursor: initial;
+
+    .icon, .name {
+      color: #00E5FF;
+    }
+  }
+
+  .icon {
+    width: 50px;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  md-icon {
+    font-size: 45px;
+    height: 45px;
+    width: 45px;
+    opacity: 0.3;
+    line-height: 50px;
+  }
+
+  .lock {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .lock.filled {
+    opacity: 1;
+  }
+
+  .list-item-spacer {
+    flex: auto;
+  }
+
+  .heart {
+    visibility: hidden;
+  }
+
+  .heart.filled {
+    visibility: initial;
+    opacity: 1;
+    color: #00E5FF;
+  }
+
+  &:hover {
+    background-color: #00E5FF;
+
+    .icon, .name, .heart {
+      color: black;
+    }
+
+    .heart {
+      visibility: initial;
+      cursor: pointer;
+    }
+  }
+}
